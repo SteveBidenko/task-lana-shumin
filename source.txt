@@ -1,0 +1,113 @@
+
+fld c(a00),c(a-5):5
++ Brand A=00101
++ Brand B=00102
++ Brand C=00103
++ Brand D=00104
++ Brand E=00105
++ Brand F=00106
++ Brand G=00107
++ Brand H=00108
++ Brand I=00109
++ Brand J=00110
++ Brand K=00998
++ Brand L=00999
+CC  Q1_1
+CC Codebook shared with Q2_1
+CC Codebook shared with Q2_2
+CC Codebook shared with Q2_3
+CC Codebook shared with Q2_4
+CC Codebook shared with Q2_5
+CC Codebook shared with Q2_6
+CC Codebook shared with Q2_7
+CC Codebook shared with Q2_8
+
+
+fld c(a00),c(a-5):5
++ Brand M=00101
++ Brand N=00005
++ Brand O=00006
++ Brand P=00007
++ Brand Q=00008
++ Brand R=00009
++ Brand S=00011
++ Brand T=00012
++ Brand U=00102
++ Brand V=00017
++ Brand W=00103
++ Brand X=00015
++ Brand Y=00016
++ Brand Z=00020
++ Brand AA=00021
++ Brand AB=00104
++ Brand AC=00105
++ Brand AD=00106
++ Brand AE=00107
++ Brand AF=00998
+CC  Q13_1
+CC Codebook shared with Q13_10
+CC Codebook shared with Q13_11
+CC Codebook shared with Q13_14
+CC Codebook shared with Q13_17
+CC Codebook shared with Q13_20
+CC Codebook shared with Q13_21
+CC Codebook shared with Q13_4
+CC Codebook shared with Q13_6
+CC Codebook shared with Q13_7
+CC Codebook shared with Q13_8
+CC Codebook shared with Q13_9
+
+
+net1Type 001 (Net)
+net2Type 002 (SubNet)
+net3Type 003 (Sub-SubNet)
+fld c(a00),c(a-5):5
++ Brand AG=00101
++ Brand AH=00102
++ Brand AI=00103
++ Brand AJ=00104
++ Brand AK=00105
++ Brand AL=00106
++ Brand AM=00107
+netend3
+net3Miscellaneous Animal Healthcare
+fld c(a00),c(a-5):5
++ Brand AN=00108
+"input2" 223 lines, 3985 characters
+netend3
+net3Miscellaneous Animal Healthcare
+fld c(a00),c(a-5):5
++ Brand CW=00108
++ Brand CX=00109
++ Brand CY=00110
++ Brand CZ=00111
+netend3
+netend2
+net2Miscellaneous Helping Animals
+fld c(a00),c(a-5):5
++ Brand DA=00112
++ Brand DB=00113
++ Brand DC=00114
++ Brand DD=00115
++ Brand DE=00116
++ Brand DF=00117
++ Brand DG=00118
+netend2
+netend1
+net1Miscellaneous
+fld c(a00),c(a-5):5
++ Brand DH=00119
++ Brand DI=00120
++ Brand DJ=00121
++ Brand DK=00122
++ Brand DL=00123
++ Brand DM=00124
++ Brand DN=00125
++ Brand DO=00126
+netend1
+fld c(a00),c(a-5):5
++ Brand DP=00127
++ Brand DQ=00998
++ Brand DR=00999
+CC  Q16
+

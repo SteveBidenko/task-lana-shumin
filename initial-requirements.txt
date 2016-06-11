@@ -1,0 +1,321 @@
+Can you write a program that does this:
+
+input file...basically you only write out/key in on the lines that have
+either a "+" in the 1st column or have a "net[1-9]" as the 1st 4
+characters. if you see a net1, you count the # of lines (after the current
+line) that have either one of the above-mentioned until you come up to a
+line that says "netend1" (exclude that from the calculation as well as all
+others that have "netend[2-9]" net1Helping Animals (Net) becomes " Helping
+Animals (Net)^NET22^L-" net2Animal Healthcare (Subnet) becomes " Animal
+Healthcare (SubNet)^NET13^L-" All +signs get written out like this: +
+Animals/helping/supporting animals=00101 becomes "
+Animals/helping/supporting animals^VAR(00101)^" INPUT FILE /* Morris Animal
+Foundation 502-04 CC hidQ30order_1 /* Morris Animal Foundation 502-04 CC
+hidQ30order_2 /* Morris Animal Foundation 502-04 CC Q10a fld
+c(a00),c(a-5):5 + Animals/helping/supporting animals=00101 + Rescue
+animals=00102 + Protecting animals=00103 + Helping abandoned
+animals/sheltering animals=00104 + Helping animals find homes=00105 + To
+treat/cure animals=00106 + Animal welfare/safety=00107 + Funding research
+studies to help animals=00108 + Helping cats=00109 + Other Mentions=00110 +
+None/NA=00998 + Don't Know=00999 /* Morris Animal Foundation 502-04 CC Q1_1
+CC Codebook shared with Q2_1 CC Codebook shared with Q2_2 CC Codebook
+shared with Q2_3 CC Codebook shared with Q2_4 CC Codebook shared with Q2_5
+CC Codebook shared with Q2_6 CC Codebook shared with Q2_7 CC Codebook
+shared with Q2_8 fld c(a00),c(a-5):5 + American Red Cross=00101 + Animal
+Legal Defense Fund=00005 + Animal Welfare Institute=00006 + American
+Society for the Prevention of Cruelty to Animals (ASPCA)=00007 + Society
+for the Prevention of Cruelty to Animals (SPCA)=00008 + Best Friends Animal
+Society=00009 + Dumb Friends League=00011 + Farm Sanctuary=00012 + Humane
+Society=00102 + Humane Society of the United States=00017 + PAWS=00103 +
+PETA=00015 + PetSmart Charities=00016 + Wildlife Conservation Society=00020
++ World Wildlife Fund (WWF)=00021 + Shelter/Pound (any)=00104 +
+Rescue/refuge/sanctuary=00105 + Non-Animal Specific=00106 + Other
+Mentions=00107 + None/NA=00998 /* Morris Animal Foundation 502-04 CC Q13_1
+CC Codebook shared with Q13_10 CC Codebook shared with Q13_11 CC Codebook
+shared with Q13_14 CC Codebook shared with Q13_17 CC Codebook shared with
+Q13_20 CC Codebook shared with Q13_21 CC Codebook shared with Q13_4 CC
+Codebook shared with Q13_6 CC Codebook shared with Q13_7 CC Codebook shared
+with Q13_8 CC Codebook shared with Q13_9 net1Helping Animals (Net) "input"
+244 lines, 7156 characters net3Miscellaneous Animal Healthcare fld
+c(a00),c(a-5):5 + Health/animal Health=00108 + Animal welfare=00109 +
+Rehabilitating/helping sick animals=00110 + Other Miscellaneous Animal
+Healthcare Mentions=00111 netend3 netend2 net2Miscellaneous Helping Animals
+fld c(a00),c(a-5):5 + Helping/caring for animals=00112 + Help animals all
+over the world=00113 + Animal rights/better/humane treatment of
+animals=00114 + Protecting animals=00115 + Bettering the lives of
+animals=00116 + Helping domestic and wild animals=00117 + Other
+Miscellaneous Helping Animals Mentions=00118 netend2 netend1
+net1Miscellaneous fld c(a00),c(a-5):5 + Good/quality
+organization/charity=00119 + Helpful/they want to help=00120 + Does good
+things/great work/they make an impact=00121 + Long history/proven track
+record/has been around for a long time=00122 + Non-profit=00123 + Good
+cause/goals=00124 + Efficiency with funds/allocating funds
+wisely/effectively=00125 + Other Miscellaneous Mentions=00126 netend1 fld
+c(a00),c(a-5):5 + Respondent only mentions organization name (ASPCA, Humane
+society, etc.)=00127 + None/NA=00998 + Don't Know=00999 /* Morris Animal
+Foundation 502-04 CC Q16 OUTPUT FILE Animals/helping/supporting
+animals^VAR(00101)^ Rescue animals^VAR(00102)^ Protecting
+animals^VAR(00103)^ Helping abandoned animals/sheltering
+animals^VAR(00104)^ Helping animals find homes^VAR(00105)^ To treat/cure
+animals^VAR(00106)^ Animal welfare/safety^VAR(00107)^ Funding research
+studies to help animals^VAR(00108)^ Helping cats^VAR(00109)^ Other
+Mentions^VAR(00110)^ None/NA^VAR(00998)^ Don't Know^VAR(00999)^ American
+Red Cross^VAR(00101)^ Animal Legal Defense Fund^VAR(00005)^ Animal Welfare
+Institute^VAR(00006)^ American Society for the Prevention of Cruelty to
+Animals (ASPCA)^VAR(00007)^ Society for the Prevention of Cruelty to
+Animals (SPCA)^VAR(00008)^ Best Friends Animal Society^VAR(00009)^ Dumb
+Friends League^VAR(00011)^ Farm Sanctuary^VAR(00012)^ Humane
+Society^VAR(00102)^ Humane Society of the United States^VAR(00017)^
+PAWS^VAR(00103)^ PETA^VAR(00015)^ PetSmart Charities^VAR(00016)^ Wildlife
+Conservation Society^VAR(00020)^ World Wildlife Fund (WWF)^VAR(00021)^
+Shelter/Pound (any)^VAR(00104)^ Rescue/refuge/sanctuary^VAR(00105)^
+Non-Animal Specific^VAR(00106)^ Other Mentions^VAR(00107)^
+None/NA^VAR(00998)^ Helping Animals (Net)^NET22^L- Animal Healthcare
+(SubNet)^NET14^L- Research/Medical Research (Sub-SubNet)^NET7^L- Animal
+research/helping animals through science/research^VAR(00101)^ Animal
+health/medical research/funding research to advance animal
+health^VAR(00102)^ Disease research/fund research of animal
+diseases/animals with illnesses^VAR(00103)^ Research
+treatments/medicine^VAR(00104)^ Cures/developing cures^VAR(00105)^
+Research/studies/they invest in research/advancement of science^VAR(00106)^
+Other Research/Medical Research Mentions^VAR(00107)^ Miscellaneous Animal
+Healthcare^NET4^L- Health/animal Health^VAR(00108)^ Animal
+welfare^VAR(00109)^ Rehabilitating/helping sick animals^VAR(00110)^ Other
+Miscellaneous Animal Healthcare Mentions^VAR(00111)^ Miscellaneous Helping
+Animals^NET7^L- Helping/caring for animals^VAR(00112)^ Help animals all
+over the world^VAR(00113)^ Animal rights/better/humane treatment of
+animals^VAR(00114)^ Protecting animals^VAR(00115)^ Bettering the lives of
+animals^VAR(00116)^ Helping domestic and wild animals^VAR(00117)^ Other
+Miscellaneous Helping Animals Mentions^VAR(00118)^ Miscellaneous^NET8^L-
+Good/quality organization/charity^VAR(00119)^ Helpful/they want to
+help^VAR(00120)^ Does good things/great work/they make an
+impact^VAR(00121)^ Long history/proven track record/has been around for a
+long time^VAR(00122)^ Non-profit^VAR(00123)^ Good cause/goals^VAR(00124)^
+Efficiency with funds/allocating funds wisely/effectively^VAR(00125)^ Other
+Miscellaneous Mentions^VAR(00126)^ Respondent only mentions organization
+name (ASPCA, Humane society, etc.)^VAR(00127)^ None/NA^VAR(00998)^ Don't
+Know^VAR(00999)^
+
+
+#!/usr/bin/perl
+
+while (<>) {
+      if ($_ =~ /^\+/) {
+        chomp $_;
+        s/=00/=/;
+        my @line = split('=', $_);
+        print " $line[$0]";
+        shift @line;
+        print "^VAR ($line[$0])^\n";
+      }
+      else {
+      if ($_ =~ /^net[0-9]/) {
+
+#         at this point I want to count the number of lines from the ^net#
+#         until the line before "netend#" and put that number in place of
+the @ below
+
+#         This can go up to 6 different net levels. You have to count the #
+of lines after the net1 until the line that contains the 1st occurence
+
+#          of netend# (so net1 until the 1st netend1, net2 until the 1st
+netend2, etc. remember you are only counting lines that
+
+#          have either a net[1-9] or a "+" in the 1st position.
+
+
+         chomp;
+         s/net[0-9]/ /;
+         print $_;
+         print "^NET@^L-\n";
+         }
+      }
+}
+
+
+
+INPUT:
+
+fld c(a00),c(a-5):5
++ Brand A=00101
++ Brand B=00102
++ Brand C=00103
++ Brand D=00104
++ Brand E=00105
++ Brand F=00106
++ Brand G=00107
++ Brand H=00108
++ Brand I=00109
++ Brand J=00110
++ Brand K=00998
++ Brand L=00999
+CC  Q1_1
+CC Codebook shared with Q2_1
+CC Codebook shared with Q2_2
+CC Codebook shared with Q2_3
+CC Codebook shared with Q2_4
+CC Codebook shared with Q2_5
+CC Codebook shared with Q2_6
+CC Codebook shared with Q2_7
+CC Codebook shared with Q2_8
+
+
+fld c(a00),c(a-5):5
++ Brand M=00101
++ Brand N=00005
++ Brand O=00006
++ Brand P=00007
++ Brand Q=00008
++ Brand R=00009
++ Brand S=00011
++ Brand T=00012
++ Brand U=00102
++ Brand V=00017
++ Brand W=00103
++ Brand X=00015
++ Brand Y=00016
++ Brand Z=00020
++ Brand AA=00021
++ Brand AB=00104
++ Brand AC=00105
++ Brand AD=00106
++ Brand AE=00107
++ Brand AF=00998
+CC  Q13_1
+CC Codebook shared with Q13_10
+CC Codebook shared with Q13_11
+CC Codebook shared with Q13_14
+CC Codebook shared with Q13_17
+CC Codebook shared with Q13_20
+CC Codebook shared with Q13_21
+CC Codebook shared with Q13_4
+CC Codebook shared with Q13_6
+CC Codebook shared with Q13_7
+CC Codebook shared with Q13_8
+CC Codebook shared with Q13_9
+
+
+net1Type 001 (Net)
+net2Type 002 (SubNet)
+net3Type 003 (Sub-SubNet)
+fld c(a00),c(a-5):5
++ Brand AG=00101
++ Brand AH=00102
++ Brand AI=00103
++ Brand AJ=00104
++ Brand AK=00105
++ Brand AL=00106
++ Brand AM=00107
+netend3
+net3Miscellaneous Animal Healthcare
+fld c(a00),c(a-5):5
++ Brand AN=00108
+"input2" 223 lines, 3985 characters
+netend3
+net3Miscellaneous Animal Healthcare
+fld c(a00),c(a-5):5
++ Brand CW=00108
++ Brand CX=00109
++ Brand CY=00110
++ Brand CZ=00111
+netend3
+netend2
+net2Miscellaneous Helping Animals
+fld c(a00),c(a-5):5
++ Brand DA=00112
++ Brand DB=00113
++ Brand DC=00114
++ Brand DD=00115
++ Brand DE=00116
++ Brand DF=00117
++ Brand DG=00118
+netend2
+netend1
+net1Miscellaneous
+fld c(a00),c(a-5):5
++ Brand DH=00119
++ Brand DI=00120
++ Brand DJ=00121
++ Brand DK=00122
++ Brand DL=00123
++ Brand DM=00124
++ Brand DN=00125
++ Brand DO=00126
+netend1
+fld c(a00),c(a-5):5
++ Brand DP=00127
++ Brand DQ=00998
++ Brand DR=00999
+CC  Q16
+
+
+
+OUTPUT:
+
+ Brand A^VAR (101)^
+ Brand B^VAR (102)^
+ Brand C^VAR (103)^
+ Brand D^VAR (104)^
+ Brand E^VAR (105)^
+ Brand F^VAR (106)^
+ Brand G^VAR (107)^
+ Brand H^VAR (108)^
+ Brand I^VAR (109)^
+ Brand J^VAR (110)^
+ Brand K^VAR (998)^
+ Brand L^VAR (999)^
+ Brand M^VAR (101)^
+ Brand N^VAR (005)^
+ Brand O^VAR (006)^
+ Brand P^VAR (007)^
+ Brand Q^VAR (008)^
+ Brand R^VAR (009)^
+ Brand S^VAR (011)^
+ Brand T^VAR (012)^
+ Brand U^VAR (102)^
+ Brand V^VAR (017)^
+ Brand W^VAR (103)^
+ Brand X^VAR (015)^
+ Brand Y^VAR (016)^
+ Brand Z^VAR (020)^
+ Brand AA^VAR (021)^
+ Brand AB^VAR (104)^
+ Brand AC^VAR (105)^
+ Brand AD^VAR (106)^
+ Brand AE^VAR (107)^
+ Brand AF^VAR (998)^
+ Type 001 (Net)^NET22^L-
+ Type 002 (SubNet)^NET13^L-
+ Type 003 (Sub-SubNet)^NET7^L-
+ Brand AG^VAR (101)^
+ Brand AH^VAR (102)^
+ Brand AI^VAR (103)^
+ Brand AJ^VAR (104)^
+ Brand AK^VAR (105)^
+ Brand AL^VAR (106)^
+ Brand AM^VAR (107)^
+ Miscellaneous Animal Healthcare^NET4^L-
+ Brand CW^VAR (108)^
+ Brand CX^VAR (109)^
+ Brand CY^VAR (110)^
+ Brand CZ^VAR (111)^
+ Miscellaneous Helping Animals^NET7^L-
+ Brand DA^VAR (112)^
+ Brand DB^VAR (113)^
+ Brand DC^VAR (114)^
+ Brand DD^VAR (115)^
+ Brand DE^VAR (116)^
+ Brand DF^VAR (117)^
+ Brand DG^VAR (118)^
+ Miscellaneous^NET8^L-
+ Brand DH^VAR (119)^
+ Brand DI^VAR (120)^
+ Brand DJ^VAR (121)^
+ Brand DK^VAR (122)^
+ Brand DL^VAR (123)^
+ Brand DM^VAR (124)^
+ Brand DN^VAR (125)^
+ Brand DO^VAR (126)^
+ Brand DP^VAR (127)^
+ Brand DQ^VAR (998)^
+ Brand DR^VAR (999)^
